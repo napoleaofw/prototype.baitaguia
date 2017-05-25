@@ -1,0 +1,1 @@
+<!--genérico para a maioria das pages-->
