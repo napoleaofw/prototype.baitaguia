@@ -1,8 +1,6 @@
 <body>
-    @include('home.parts.header')
     <div>
-        <h1>Body da home</h1>
+        <h1>Body Home</h1>
     </div>
-    @include('home.parts.footer')
-    @include('home.main.script')
+    <script type="text/javascript" href="{{ url('/js/home.js') }}"></script>
 </body>

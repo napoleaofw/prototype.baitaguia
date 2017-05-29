@@ -1,4 +1,4 @@
 <head>
     <title>Página Home</title>
-    @include('home.main.style')
+    <link rel="stylesheet" type="text/css" href="{{ url('/css/home.css') }}">
 </head>

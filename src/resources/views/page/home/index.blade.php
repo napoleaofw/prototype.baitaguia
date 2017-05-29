@@ -1,4 +1,4 @@
 <html>
-    @include('home.main.head')
-    @include('home.main.body')
+    @include('page.home.main.head')
+    @include('page.home.main.body')
 </html>
