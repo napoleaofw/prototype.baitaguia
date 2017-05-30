@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\FrontEnd;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
@@ -8,32 +8,11 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 use Request;
-use Route;
 
-class FrontEndController extends BaseController
+class SearchController extends BaseController
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function map(Request $request)
-    {
-        // dd(Route::getRoutes());
-        $data = [
-            'routeRecordList' => Route::getRoutes()
-        ];
-        return view('page.map.index', $data);
-    }
-
-    public function home(Request $request)
-    {
-        return view('page.home.index');
-    }
-
-    public function auth(Request $request)
-    {
-        return view('page.auth.index');
-    }
-
-    public function search(Request $request)
+    public function index(Request $request)
     {
         $data = [
             'questionRecordList' => [
@@ -218,34 +197,4 @@ class FrontEndController extends BaseController
         return view('page.search.index', $data);
     }
 
-    public function advertisement(Request $request)
-    {
-        return view('page.advertisement.index');
-    }
-
-    public function account(Request $request)
-    {
-        return view('page.account.index');
-    }
-
-    public function profile(Request $request)
-    {
-        return view('page.profile.index');
-    }
-
-    public function createAdvertisement(Request $request)
-    {
-        return view('page.create-advertisement.index');
-    }
-
-    public function terms(Request $request)
-    {
-        return view('page.terms.index');
-    }
-
-    public function privacity(Request $request)
-    {
-        return view('page.privacity.index');
-    }
-    
 }

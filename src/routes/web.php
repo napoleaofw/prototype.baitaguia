@@ -12,34 +12,34 @@
 */
 
 // Map
-Route::get('/map', 'FrontEndController@map');
+Route::get('/map', 'FrontEnd\MapController@index');
 
 // Home
-Route::get('/', 'FrontEndController@home');
+Route::get('/', 'FrontEnd\HomeController@index');
 
 // Login / Register
-Route::get('/auth', 'FrontEndController@auth');
+Route::get('/auth', 'FrontEnd\AuthController@index');
 
 // Search
-Route::get('/search', 'FrontEndController@search');
+Route::get('/search', 'FrontEnd\SearchController@index');
 
 // Advertisement
-Route::get('/advertisement', 'FrontEndController@advertisement');
+Route::get('/advertisement', 'FrontEnd\AdvertisementController@index');
 
 // Account
-Route::get('/account', 'FrontEndController@account');
+Route::get('/account', 'FrontEnd\AccountController@index');
 
 // Profile
-Route::get('/profile', 'FrontEndController@profile');
+Route::get('/profile', 'FrontEnd\ProfileController@index');
 
 // Create Advertisement
-Route::get('/create-advertisement', 'FrontEndController@createAdvertisement');
+Route::get('/create-advertisement', 'FrontEnd\CreateAdvertisementController@index');
 
 // Terms
-Route::get('/terms', 'FrontEndController@terms');
+Route::get('/terms', 'FrontEnd\TermsController@index');
 
 // Privacity
-Route::get('/privacity', 'FrontEndController@privacity');
+Route::get('/privacity', 'FrontEnd\PrivacityController@index');
 
 // Route::get('', '');
 // Route::get('', '');

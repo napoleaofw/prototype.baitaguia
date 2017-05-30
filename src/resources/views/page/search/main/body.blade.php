@@ -6,13 +6,17 @@
                     @foreach($questionRecordList as $questionRecord)
                         <div class="question">
                             <div class="question-header">
-                                <div class="question-title">
-                                    <span>{{ $questionRecord['name'] }}</span>
-                                    <i class="fa fa-angle-down"></i>
-                                </div>
-                                <div class="question-text">
-                                    <input type="text" placeholder="{{ $questionRecord['inputPlaceholder'] }}">
-                                </div>
+                                <ul class="temp-list">
+                                    <li class="temp question-title">
+                                        <a href="#" class="temp-link">
+                                            {{ $questionRecord['name'] }}
+                                        </a>
+                                        <i class="fa fa-angle-down"></i>
+                                    </li>
+                                    <li class="temp question-text">
+                                        <input type="text" placeholder="{{ $questionRecord['inputPlaceholder'] }}">
+                                    </li>
+                                </ul>
                             </div>
                             <div class="question-body">
                                 <ul class="filter-list">

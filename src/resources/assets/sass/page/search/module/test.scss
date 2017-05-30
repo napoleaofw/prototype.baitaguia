@@ -1,13 +1,79 @@
 html {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-* {
-    color: #529eff;
-    font-size: 2.5rem;
+a {
+  color: #529eff;
+}
+
+a:focus,
+a:hover {
+  color: #5263ff;
+}
+
+a:visited {
+
 }
 
 ::selection {
-    background-color: #529eff;
-    color: #fff;
+  background-color: #529eff;
+  color: #fff;
+}
+
+input {
+    border-color: #DDD;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    padding-left: 15px;
+}
+
+.question-list {
+    font-size: 4rem;
+}
+
+.question-list .question {
+    border-color: #f4f4f4;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.question-list .question .question-header {
+    background-color: #EFEFEF;
+}
+
+.filter-list,
+.temp-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.filter-list .filter {
+    border-color: #f4f4f4;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+}
+
+.question-list .question .question-header,
+.question-list .question .question-text {
+    border-color: #b5b5b5;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+}
+
+.question-list .question .question-header,
+.question-list .question .question-text,
+.filter-list .filter a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.filter-list .filter a:hover {
+    background: #f7f7f7
 }
